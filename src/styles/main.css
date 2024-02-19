@@ -1,0 +1,126 @@
+.bg-video{
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.bg-video .video{
+    height: 100vh;
+}
+.bg-video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,0.8) 50%, 
+    rgba(0,0,0,1) 100%);
+}
+.conteiners{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+.conteiner__left{
+    background-color: #d47b35;
+    border: 4px solid#ccaa00;
+    width: 35vw;
+    height: 100vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.conteiner__right{
+   width: 65vw;
+}
+.score_box {
+    background-color: #fff;
+    padding: 1rem;
+    border: 4px solid #000;
+    border-radius: 5px;
+}
+.card_details{
+    background-color: #fff;
+    padding: 1rem;
+    border: 4px solid #000;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+#card-name {
+    font-size: 0.8rem;
+}
+#card-type {
+    font-size: 1rem;
+}
+.card-box__conteiner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: auto;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.card-box{
+    background-color: #454046;
+    border: 6px solid #c68133;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 5px #000;
+
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-versus__conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 300px;
+}
+.versus-top,
+.versus-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#next-duel {
+    display: none;
+}
+.card-infield{
+    height: 11.2rem;
+    width: 8rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.card{
+transition: 1.2s;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+
+.degub{
+    border: 1px solid red;
+}
